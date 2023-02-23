@@ -1,0 +1,72 @@
+.topicos {
+    background-color: var(--cor-branco-principal);
+    padding-top: 1em;
+}
+
+.topicos__descricao {
+    background: var(--cor-azul-degrade);
+    text-align: center;
+}
+
+.topicos__descricao-titulo {
+    color: var(--cor-branco-principal);
+    font-weight: 300;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+}
+
+.topicos__descricao-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.descricao__lista-item {
+    background-color: var(--cor-amarela);
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.descricao__lista-link {
+    color: var(--cor-branco-principal);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.contato {
+    background-color: var(--cor-branco-principal);
+    padding: 1.5em;
+}
+
+.contato__titulo, .contato__texto, .contato__email {
+    background: var(--cor-azul-degrade);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 1.12rem;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.contato__texto {
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.contato__email {
+    padding: 0.8em;
+    border: 1px solid var(--cor-azul-texto);
+    border-radius: 1.5em;
+    width: 90%;
+}
+
+.contato__email::placeholder {
+    background: url("../assets/email.svg") no-repeat;
+    background-position: 1em;
+    padding-left: 3.5em;
+}
