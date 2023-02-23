@@ -74,5 +74,8 @@
     text-decoration: none;
     text-align: center;
     padding: 0.5em 0.8em;
+}
 
+.imagem__pontuacao-estrelas {
+    width: 5.5em;
 }
