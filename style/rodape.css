@@ -6,3 +6,36 @@ hr {
     background-color: var(--cor-branco-principal);
     padding: 1em 0 1.5em 1.5em;
 }
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--cor-branco-principal);
+        padding-top: 3em;
+    }
+
+    .rodape__titulo {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .lista__books-item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
+    .lista__titulo {
+        font-size: 0.9rem;
+        color: var(--cor-cinza-secundaria);
+        margin-bottom: 1.5em;
+    }
+
+    .lista__books-link {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--cor-cinza-primaria);
+        margin-left: 0.5em;
+    }
+}

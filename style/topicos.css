@@ -11,8 +11,7 @@
 .topicos__descricao-titulo {
     color: var(--cor-branco-principal);
     font-weight: 300;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding: 1.5em 0;
 }
 
 .topicos__descricao-lista {
@@ -73,4 +72,39 @@ background-clip: text;
     font-family: var(--font-principal-poppins);
     font-size: 1rem;
     font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos__descricao-titulo {
+        font-size: 1.5rem;
+        padding: 1.3em 0 1.6em 0
+    }
+
+    .descricao__lista-link {
+        font-size: 1.5rem;
+    }
+
+    .descricao__lista-item {
+        padding: 1.5em 2em;
+        margin: 0.8em;
+    }
+
+    .contato {
+        display: flex;
+        align-items: center;
+    }
+
+    .contato__email-input{
+        width: 50%;
+    }
+
+    .contato__descricao {
+        width: 50%;
+        margin: 0 8em;
+    }
+
+    .contato__titulo {
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+    }
 }
