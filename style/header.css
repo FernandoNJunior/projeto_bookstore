@@ -15,6 +15,14 @@
     position: relative;
 }
 
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
+    background-image: url("../assets/Menu\ Aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--cor-azul-degrade);
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -40,7 +48,8 @@
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item {
+.lista-menu__titulo,
+.lista-menu__item {
     padding: 0.9em;
     background-color: var(--cor-branco-principal);
 }
@@ -52,21 +61,24 @@
 
 .lista-menu__link {
     background: var(--cor-azul-degrade);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.container__botao {
+
+.container__botao,
+.container__titulo,
+.lista-menu__secundario,
+.container__texto {
     display: none;
 }
 
-.container__titulo, .lista-menu__secundario {
-    display: none;
-}
+@media screen and (min-width: 1024px) {
 
-@media screen and (min-width: 1024px) { 
-    .cabecalho__menu-hamburguer, .container__imagem-favoritos, .opcao__botao {
+    .cabecalho__menu-hamburguer,
+    .container__imagem-favoritos,
+    .opcao__botao {
         display: none;
     }
 
@@ -81,6 +93,7 @@ background-clip: text;
         font-weight: 400;
         color: var(--cor-preta);
     }
+
     .container__titulo-negrito {
         font-weight: 700;
     }
@@ -90,7 +103,7 @@ background-clip: text;
     }
 
     .lista-menu__item-secundario {
-        padding: 0.5em 2em 0.5em 0.5em;        
+        padding: 2em 2em ;
     }
 
     .lista-menu__link-secundario {
@@ -103,6 +116,46 @@ background-clip: text;
         width: auto;
     }
 
+    .opcao__botao:checked ~ .opcao__rotulo > .lista-menu__item-secundario {
+        background: var(--cor-azul-degrade);
+        color: var(--cor-branco-principal);
+    }
 
-    
+    .lista-menu__item:hover {
+        background: var(--cor-azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--cor-branco-principal);
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .container__texto {
+        display: block;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        margin-right: 3.5em;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: var(--cor-preta);
+    }
+
+    .container__imagem-right {
+        margin-right: 0;
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcao {
+        margin-right: auto;
+    }
+
 }

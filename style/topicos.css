@@ -108,3 +108,31 @@ background-clip: text;
         margin-bottom: 1em;
     }
 }
+
+@media screen and (min-width: 1728px ) {
+    .topicos__descricao {
+        padding: 4em 20vw;
+    }
+
+    .topicos__descricao-titulo {
+        font-size: 2em;
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+    .topicos__descricao-lista {
+        padding: 0;
+    }
+
+    .contato {
+        padding: 4em 25vw;
+    }
+
+    .contato__descricao {
+        margin: 0 1em 0 0;
+    }
+
+    .contato__texto {
+        margin-right: 2em;
+    }
+}

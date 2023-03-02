@@ -16,7 +16,7 @@ hr {
         display: flex;
         justify-content: space-around;
         background-color: var(--cor-branco-principal);
-        padding-top: 3em;
+        padding: 3em 0;
     }
 
     .rodape__titulo {
@@ -45,5 +45,12 @@ hr {
         text-decoration: none;
         color: var(--cor-cinza-primaria);
         margin-left: 0.5em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .lista__books {
+        border-left: 1px solid var(--cor-cinza-secundaria);
+        padding-left: 1em;
     }
 }
